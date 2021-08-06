@@ -11,7 +11,7 @@ export default class HomeScreen extends React.Component{
                        ISS Tracker App
                     </Text>
 
-                    <TouchableOpacity  style={styles.routebutton} onPress={()=>{this.props.navigation.navigate("ISSlocator")}}>
+                    <TouchableOpacity style={styles.routebutton} onPress={()=>{this.props.navigation.navigate("ISSlocator")}}>
                         <Text style={styles.routetext}>ISS location</Text>
                         <Text style={styles.routeknowmore}>Know more</Text>
                         <Text style={styles.numberstyle}>1</Text>
@@ -23,6 +23,13 @@ export default class HomeScreen extends React.Component{
                         <Text style={styles.routeknowmore}>Know more</Text>
                         <Text style={styles.numberstyle}>2</Text>
                         <Image source={require("../assets/meteor_icon.png")} style={[styles.image,{width:150,height:150,top:-60,right:5}]}/>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={styles.routebutton} onPress={()=>{this.props.navigation.navigate("Updates")}}>
+                        <Text style={styles.routetext}>Updates</Text>
+                        <Text style={styles.routeknowmore}>Know more</Text>
+                        <Text style={styles.numberstyle}>3</Text>
+                        <Image source={require("../assets/rocket_icon.png")} style={[styles.image,{width:130,height:130}]}/>
                     </TouchableOpacity>
 
                 </ImageBackground>

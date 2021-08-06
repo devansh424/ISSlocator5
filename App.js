@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import HomeScreen from './screens/HomeScreen';
 import ISSlocatorScreen from './screens/ISSlocatorScreen';
 import MeteorScreen from './screens/MeteorScreen';
+import UpdatesScreen from './screens/UpdatesScreen';
 
 const Stack = createStackNavigator();
 
@@ -15,6 +16,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="ISSlocator" component={ISSlocatorScreen} />
         <Stack.Screen name="Meteor" component={MeteorScreen} />
+        <Stack.Screen name="Updates" component={UpdatesScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
