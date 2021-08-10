@@ -76,22 +76,19 @@ export default class ISSlocatorScreen extends React.Component {
                     longitude: this.state.location.longitude,
                     latitude: this.state.location.latitude,
                   }}
-                ><Image source={require("../assets/iss_icon.png")} style={styles.iss}/></Marker>
+                >
+                  <Image
+                    source={require("../assets/iss_icon.png")}
+                    style={styles.iss}
+                  />
+                </Marker>
               </MapView>
             </View>
             <View style={styles.viewcontainer}>
-                <Text>
-                    Longitude : {this.state.location.longitude}
-                </Text>
-                <Text>
-                    Latitude : {this.state.location.latitude}
-                </Text>
-                <Text>
-                    Altitude : {this.state.location.altitude}
-                </Text>
-                <Text>
-                    Velocity : {this.state.location.velocity}
-                </Text>
+              <Text>Longitude : {this.state.location.longitude}</Text>
+              <Text>Latitude : {this.state.location.latitude}</Text>
+              <Text>Altitude : {this.state.location.altitude}</Text>
+              <Text>Velocity : {this.state.location.velocity}</Text>
             </View>
           </ImageBackground>
         </View>
@@ -154,20 +151,19 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
   },
-  iss:{
-      width:40,
-      height:30
+  iss: {
+    width: 40,
+    height: 30,
   },
-  mapcontainer:{
-      flex:0.7,
+  mapcontainer: {
+    flex: 0.7,
   },
-  viewcontainer:{
-      flex:0.2,
-      backgroundColor:"white",
-      borderBottomLeftRadius:10,
-      borderBottomRightRadius:10,
-      padding:10,
-      marginTop:10,
-      alignItems:"center"
-  }
+  viewcontainer: {
+    flex: 0.2,
+    backgroundColor: "white",
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    padding: 10,
+    alignItems: "center",
+  },
 });
